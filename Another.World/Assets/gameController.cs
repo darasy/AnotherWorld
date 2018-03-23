@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gameController:MonoBehaviour{
+public class gameController : MonoBehaviour
+{
 
     public GameObject Menu;
-    public bool CameraDisable =false;
+    public GameObject Inventory;
+    public bool CameraDisable = false;
     public bool MouseVisiable = false;
     public bool MenuState = false;
-
+    public bool CheckInventory = false;
 
     void Start()
     {
@@ -30,12 +32,33 @@ public class gameController:MonoBehaviour{
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            MenuState = !MenuState;
-            Menu.SetActive(MenuState);
+            if (CheckInventory)
+            {
+                CheckInventory = !CheckInventory;
+                Inventory.SetActive(CheckInventory);
+            }
+            else
+            {
+                MenuState = !MenuState;
+                Menu.SetActive(MenuState);
+            }
             CameraDisable = !CameraDisable;
             MouseVisiable = !MouseVisiable;
 
-}
+
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (MenuState)
+            { }
+            else
+            {
+                CheckInventory = !CheckInventory;
+                Inventory.SetActive(CheckInventory);
+                CameraDisable = !CameraDisable;
+                MouseVisiable = !MouseVisiable;
+            }
+        }
     }
 
 }
