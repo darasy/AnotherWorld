@@ -1720,6 +1720,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 626786106}
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &557533762
@@ -2063,6 +2074,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1189901813686520, guid: a4257e7d4db703f48b7d6131fac01170,
     type: 2}
   m_PrefabInternal: {fileID: 1824984810}
+--- !u!114 &626786106 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114785989833099366, guid: a4257e7d4db703f48b7d6131fac01170,
+    type: 2}
+  m_PrefabInternal: {fileID: 1824984810}
+  m_Script: {fileID: 11500000, guid: 0c32d44bf6e49a546aae4c615a452f5b, type: 3}
 --- !u!1 &694230508
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,6 +5183,17 @@ MonoBehaviour:
       - m_Target: {fileID: 315263885}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 626786106}
+        m_MethodName: Exit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

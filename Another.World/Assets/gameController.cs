@@ -16,7 +16,9 @@ public class gameController : MonoBehaviour
     {
 
     }
-    void Update()
+        
+    
+void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -60,5 +62,15 @@ public class gameController : MonoBehaviour
             }
         }
     }
+  
+        public void Exit()
+        {
+            CameraDisable = false;
+            MouseVisiable = false;
+            MenuState = false;
+            CheckInventory = false;
+        }
+    
 
 }
+
